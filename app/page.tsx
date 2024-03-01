@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { BsSteam } from "react-icons/bs";
 import isValidSteamId from "@/utils/steamId";
 
 type PageProps = { searchParams?: { steamId?: string } }
@@ -33,7 +32,6 @@ export default async function Home({ searchParams }: PageProps) {
         return (
             <div className="flex flex-col items-center space-y-4">
                 <a href="/auth/steam" className="flex flex-row items-center space-x-4 border border-gray-400 text-white px-8 py-4 rounded-lg">
-                    <BsSteam className="text-4xl" />
                     <span className="text-xl font-semibold">Sign in with Steam</span>
                 </a>
             </div>
